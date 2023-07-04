@@ -29,6 +29,6 @@ class InvoicesController < ApplicationController
   end
 
   def invoice_params
-    params.require(:invoice).permit(:invoice_number, :due_date, :amount)
+    params.require(:invoice).permit(:invoice_number, :due_date, :amount, :status)
   end
 end

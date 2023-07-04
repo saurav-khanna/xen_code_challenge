@@ -27,6 +27,7 @@ const InvoiceList = () => {
               <TableCell align="left">Invoice ID</TableCell>
               <TableCell align="right">Amount</TableCell>
               <TableCell align="right">Due Date</TableCell>
+              <TableCell align="right">Status</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -38,6 +39,7 @@ const InvoiceList = () => {
                 <TableCell align="left">{row.invoice_number}</TableCell>
                 <TableCell align="right">{row.amount}</TableCell>
                 <TableCell align="right">{row.due_date}</TableCell>
+                <TableCell align="right">{row.status}</TableCell>
               </TableRow>
             ))}
           </TableBody>

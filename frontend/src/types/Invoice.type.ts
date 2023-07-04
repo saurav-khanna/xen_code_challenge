@@ -3,5 +3,6 @@ export interface Invoice {
   amount: number,
   due_date: string,
   created_at: string,
-  updated_at: string
+  updated_at: string,
+  status: number
 }
