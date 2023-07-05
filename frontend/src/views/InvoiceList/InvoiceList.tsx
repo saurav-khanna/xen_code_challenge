@@ -15,11 +15,9 @@ import { fetchInvoices } from '../../utils/fetchInvoices'
 import { Link } from 'react-router-dom'
 
 const initialRows = fetchInvoices()
-console.log(initialRows)
 
 const InvoiceList = () => {
   const [rows, _setRows] = useState<Invoice[]>(initialRows.read())
-  console.log(rows)
 
   return (
     <Suspense fallback={<CircularProgress />}>
