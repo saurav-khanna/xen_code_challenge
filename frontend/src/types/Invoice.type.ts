@@ -1,4 +1,5 @@
 export interface Invoice {
+  id: number,
   invoice_number: string,
   amount: number,
   due_date: string,

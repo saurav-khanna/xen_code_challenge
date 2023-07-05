@@ -12,6 +12,7 @@ import {
 
 import { Invoice } from '../../types/Invoice.type'
 import { fetchInvoices } from '../../utils/fetchInvoices'
+import { Link } from 'react-router-dom'
 
 const initialRows = fetchInvoices()
 
@@ -35,6 +36,7 @@ const InvoiceList = () => {
               <TableRow
                 key={row.invoice_number}
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                component={Link} to={`/invoices/${row.id}/`}
               >
                 <TableCell align="left">{row.invoice_number}</TableCell>
                 <TableCell align="right">{row.amount}</TableCell>
